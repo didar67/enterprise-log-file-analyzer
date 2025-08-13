@@ -1,0 +1,15 @@
+# Global configuration for Log File Analyzer
+# Keep secrets or environment-specific overrides out of version control.
+
+app:
+  log_file_path: "./sample.log"    # Path to the log file to analyze
+  dry_run: true                    # Dry-run mode avoids destructive actions
+  async_chunk_size: 1024           # Chunk size in bytes for async file reading
+
+logging:
+  log_file: "./logs/app.log"       # Log file path with rotation enabled
+  log_level: "INFO"                # Default logging verbosity level
+  max_bytes: 1048576               # Max size per log file (1MB) before rotation
+  backup_count: 5                  # Number of rotated logs to keep
+
+# For environment-specific overrides, use config.local.yaml (not committed)

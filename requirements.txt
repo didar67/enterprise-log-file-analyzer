@@ -1,0 +1,6 @@
+# Dependencies for Python 3.13.3 runtime
+# In production, pin exact versions to ensure consistency.
+
+pydantic>=2.3.0    # For config validation and modeling
+pyyaml>=6.0        # YAML config parsing
+pytest>=7.0.0      # Test framework
